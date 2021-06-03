@@ -1,0 +1,9 @@
+/.bloop
+/.bsp
+/.idea
+/.java-version
+/.jvmopts
+/.metals
+/.sbtopts
+/.vscode
+/target

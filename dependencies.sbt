@@ -5,10 +5,10 @@ ThisBuild / libraryDependencies += "org.jooq" % "joor" % "0.9.13" % Provided
 ThisBuild / libraryDependencies += {
   CrossVersion.partialVersion(sys.props("java.version")) match {
 
-    case Some((major, _)) if 9 <= major =>
+    case Some((1, 9)) | Some((15, _)) =>
       "org.jooq" % "joor" % "0.9.13" % Test
 
-    case Some((8, _)) =>
+    case Some((1, 8)) =>
       "org.jooq" % "joor-java-8" % "0.9.13" % Test
 
   }
